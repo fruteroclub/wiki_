@@ -1,0 +1,291 @@
+/* CSS for PDF */
+
+/**************************/
+/**** TABLE OF CONTENT ****/
+/**************************/
+.section.toc .page {
+    display: none;
+}
+
+/********************/
+/**** FONT STUFF ****/
+/********************/
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-Thin.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-ThinItalic.ttf);
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-ExtraLight.ttf);
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-ExtraLightItalic.ttf);
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-SemiBoldItalic.ttf);
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.book.font-family-1 {
+  font-family: Montserrat, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.section {
+  font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
+/***********************/
+/**** GENERAL STYLE ****/
+/***********************/
+body {}
+
+
+/******************/
+/**** HEADINGS ****/
+/******************/
+
+.section h1, h2, h3, h4, h5 {
+  color: rgb(255, 0, 125);
+}
+.section h1 {
+  font-size: 6em;
+  line-height: 2.6em;
+}
+.section h2 {
+  font-size: 2em;
+}
+.section h3 {
+  font-size: 1.5em;
+}
+.section h4 {
+  font-size: 1.25em;
+}
+.section h5 {
+  font-size: 1em;
+}
+.section h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+
+/*******************/
+/**** TITLE IDs ****/
+/*******************/
+/* title IDs make it possible to style specific headings independently */
+#title{
+  /* border-bottom: 1px solid #eaecef; */
+}
+
+
+/**********************/
+/**** ANCHOR LINKS ****/
+/**********************/
+.anchorjs-link {
+  transition: all .25s linear;
+  /*color: #FF5231!important;*/
+  color: #000;
+  text-decoration: none!important;
+}
+.anchorjs-link:hover {
+  /*color: #4183c4!important;*/
+  color: rgb(255, 0, 125);
+  text-decoration: none!important;
+}
+*:hover > .anchorjs-link {
+  /*margin-left: -1.125em !important;*/
+  margin-top: -.05em;
+  text-decoration: none!important;
+  transition: color .25s linear;
+}
+
+
+/********************/
+/**** BLOCKQUOTE ****/
+/********************/
+blockquote {
+    /* color: #6a6a6a; */
+    /* background-color: #efefef; */
+    /* border: 1px solid #e5e5e5; */
+    margin: 2em 0;
+    margin-bottom: .85em;
+    padding: 20px 30px;
+    color: #334;
+    /* border-left: 4px solid #e5e5e5; */
+    background-color: #fbfbfb;
+    border: 1px solid #e5e5e5;
+    border-radius: .2em;
+}
+
+.markdown-section blockquote {
+    /* color: #6a6a6a; */
+    /* background-color: #efefef; */
+    /* border: 1px solid #e5e5e5; */
+    margin: 2em 0;
+    margin-bottom: .85em;
+    padding: 20px 30px;
+    color: #334;
+    /* border-left: 4px solid #e5e5e5; */
+    background-color: #fbfbfb;
+    border: 1px solid #e5e5e5;
+    border-radius: .2em;
+}
+.markdown-section blockquote > p {
+  margin-bottom: 0;
+}
+.markdown-section blockquote > h1:first-of-type, h2:first-of-type, h3:first-of-type, h4:first-of-type, h5:first-of-type, h6:first-of-type {
+  margin-top: 0;
+}
+
+
+/************************/
+/********* CODE *********/
+/************************/
+.markdown-section pre {
+    overflow: auto;
+    word-wrap: normal;
+    margin: 0;
+    padding: .85em 1em;
+    margin-bottom: 1.275em;
+    background: #ebfcfe;
+    border: 1px solid #caf9fd;
+    border-radius: .2em;
+}
+.ace {
+    border: 1px solid #caf9fd;
+    border-radius: .2em;
+    max-height: 500px!important;
+    overflow: hidden!important;
+    overflow-y: scroll!important;
+}
+.ace-chrome .ace_gutter {
+    color: #334!important;
+    background: #caf9fd!important;
+}
+.ace-content {
+    background-color: #ebfcfe!important;
+}
+
+
+/************************/
+/**** GLOSSARY TERMS ****/
+/************************/
+.markdown-section .glossary-term {
+  text-decoration: none;
+  color: #727272;
+}
+.markdown-section .glossary-term:hover {
+  text-decoration: none;
+}
+
+
+/*******************/
+/**** TASK LIST ****/
+/*******************/
+input {
+  margin-right: 7px;
+}
+
+
+/*******************/
+/****** LINKS ******/
+/*******************/
+.markdown-section a:active, .markdown-section a:focus, .markdown-section a:hover {
+  /*text-decoration: none!important;*/
+}
+
+
+/*******************/
+/****** ALERTS *****/
+/*******************/
+.alert {
+  border-radius: .2em;
+}
+
+
+/**************************/
+/****** IMAGE CAPTION *****/
+/**************************/
+figcaption {
+  color: #6a6a6a;
+  font-size: .9em;
+}
+
+.section.toc .page {
+    display: none;
+}
+
+p.copyright {
+  display: none!important;
+}

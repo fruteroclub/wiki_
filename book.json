@@ -1,0 +1,46 @@
+{
+    "title": "gitbook template",
+    "author": "WeMake",
+    "plugins": [
+        "anchorjs",
+        "styled-blockquotes",
+        "todo",
+        "include-codeblock",
+        "ace",
+        "copy-code-button",
+        "image-captions",
+        "noembed",
+        "embed-pdf",
+        "autocover",
+        "layout-tags"
+    ],
+    "pluginsConfig": {
+        "anchorjs": {
+            "placement": "left",
+            "visible": "hover",
+            "class": "anchorjs-link"
+        },
+        "include-codeblock": {
+            "template": "ace",
+            "unindent": true
+        },
+        "image-captions": {
+            "caption": "_CAPTION_",
+            "attributes": { "style": "margin: 0 auto; display: block;" }
+        },
+        "autocover": {
+            "font": {
+                "size": 20,
+                "family": "Impact",
+                "color": "#FFF"
+            },
+            "size": {
+                "w": 1800,
+                "h": 2360
+            },
+            "background": {
+                "color": "#09F"
+            }
+        }
+    }
+}

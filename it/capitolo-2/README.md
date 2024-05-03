@@ -1,0 +1,1 @@
+readme del capitolo 2 ITA
